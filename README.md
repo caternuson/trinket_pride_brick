@@ -1,5 +1,5 @@
 # trinket pride brick
-![thumbnail](http://caternuson.github.io/trinket-pride-brick/static/trinket-pride-brick-thumb.jpg)<br/>
+![thumbnail](http://caternuson.github.io/trinket_pride_brick/static/trinket-pride-brick-thumb.jpg)<br/>
 Simple little glowy thing.
 
 # Hardware
