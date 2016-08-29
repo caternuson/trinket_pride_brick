@@ -1,6 +1,7 @@
 # trinket pride brick
 ![thumbnail](http://caternuson.github.io/trinket_pride_brick/static/trinket-pride-brick-thumb.jpg)<br/>
-Simple little glowy thing.
+Simple little glowy thing. Kind of looks like a brick. Kind of looks like
+the pride flag.
 
 # Hardware
 * [Adafruit Trinket Mini](https://www.adafruit.com/products/1501)
