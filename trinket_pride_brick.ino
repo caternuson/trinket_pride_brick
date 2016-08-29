@@ -1,18 +1,12 @@
 #include <Adafruit_NeoPixel.h>
 
-#define PIN 0
+#define NEO_PIN 0
+#define NUM_PIXELS 6
+#define DELAY 100
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(6, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
-void setup() {
-  strip.begin();
-  strip.show();
-}
-
-void loop() {
-  rainbowCycle(20);
-}
-
+// reused from Adafruit_Neopixel example
 void rainbowCycle(uint8_t wait) {
   uint16_t i, j;
 
@@ -25,6 +19,7 @@ void rainbowCycle(uint8_t wait) {
   }
 }
 
+// reused from Adafruit_Neopixel example
 // Input a value 0 to 255 to get a color value.
 // The colours are a transition r - g - b - back to r.
 uint32_t Wheel(byte WheelPos) {
@@ -37,4 +32,13 @@ uint32_t Wheel(byte WheelPos) {
    WheelPos -= 170;
    return strip.Color(0, WheelPos * 3, 255 - WheelPos * 3);
   }
+}
+
+void setup() {
+  strip.begin();
+  strip.show();
+}
+
+void loop() {
+  rainbowCycle(DELAY);
 }
